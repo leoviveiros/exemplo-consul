@@ -1,0 +1,15 @@
+{
+    "service": {
+        "id": "nginx1",
+        "name": "nginx",
+        "port": 80,
+        "tags": [ "web", "teste" ],
+        "check": {
+            "id": "nginx",
+            "name": "nginx check",
+            "http": "http://localhost",
+            "interval": "10s",
+            "timeout": "1s"
+        }
+    }
+}
